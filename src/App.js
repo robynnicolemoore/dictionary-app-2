@@ -10,7 +10,12 @@ function App() {
           <Dictionary />
         </main>
       </div>
-      <footer>Open source code by Robyn Moore</footer>
+      <footer>
+        <a href="https://github.com/robynnicolemoore/dictionary-app-2">
+          Open source code
+        </a>{" "}
+        by Robyn Moore
+      </footer>
     </div>
   );
 }
