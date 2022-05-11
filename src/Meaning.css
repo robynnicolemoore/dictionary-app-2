@@ -1,0 +1,20 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.Definition {
+  color: #5e6472;
+  line-height: 1;
+}
+
+.Example {
+  color: #68aa9d;
+  font-weight: bold;
+}
+
+.PartOfSpeech {
+  font-size: 14;
+  color: #aed9e0;
+  font-weight: bold;
+  font-style: oblique 40deg;
+}

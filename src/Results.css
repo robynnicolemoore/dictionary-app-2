@@ -1,0 +1,10 @@
+.word {
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  color: #5e6472;
+}
+
+.card-body {
+  background-color: #e3e1db;
+  margin-top: 0;
+}

@@ -1,3 +1,27 @@
 * {
   margin-top: 20px;
 }
+
+form {
+  font-family: "Raleway", sans-serif;
+}
+
+.searchButton {
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #d5d6e5;
+  color: #3f2547;
+  font-weight: bold;
+}
+
+.searchBar {
+  background-color: 000000;
+  font-weight: bold;
+}
+
+.searchButton:hover {
+  transition: 200ms;
+  color: white;
+  background-color: #3f2547;
+  cursor: pointer;
+}
