@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css";
+import Phonetics from "./Phonetics";
 
 export default function Results(props) {
   console.log(props.results);
@@ -8,6 +9,16 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2 className="word">{props.results.word}</h2>
+        <div className="phoneticsAudio">
+          {props.results.phonetics.map(function(phonetics, index) {
+            return (
+              <div key={index}>
+                <Phonetics phonetics={phonetics} />
+              </div>
+            );
+          })}
+        </div>
+        <div>{props.results.phonetic}</div>
         <div className="card">
           <div className="card-body">
             <h3 className="Definition">
