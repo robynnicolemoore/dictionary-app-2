@@ -12,19 +12,21 @@ export default function Results(props) {
           <div className="phoneticsAudio">
             {props.results.phonetics.map(function(phonetics, index) {
               return (
-                <div key={index}>
+                <div key={index} className="Phonetics">
                   <Phonetics phonetics={phonetics} />
                 </div>
               );
             })}
           </div>
-          <div>{props.results.phonetic}</div>
+          <div className="Phonetics">{props.results.phonetic}</div>
         </section>
+
         <section>
           <h3 className="Definition">
             {props.results.meanings.map(function(meaning, index) {
               return (
                 <div key={index}>
+                  <br />
                   <Meaning meaning={meaning} />
                 </div>
               );

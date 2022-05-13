@@ -5,10 +5,12 @@
   text-align: center;
 }
 
-.card-body {
-  background-color: #e3e1db;
-  margin-top: 0;
+.Results section {
+  background: #faf3dd;
+  margin-top: 10px;
+  padding: 40px;
 }
-section {
-  background: black;
+
+.Phonetics {
+  font-size: 20px;
 }

@@ -1,21 +1,22 @@
 * {
   font-family: "Raleway", sans-serif;
-  background-color: #faf3dd;
 }
 
 .Definition {
   color: #5e6472;
   line-height: 1;
+  font-size: 22px;
 }
 
 .Example {
-  color: #68aa9d;
+  color: #aed9e0;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .PartOfSpeech {
-  font-size: 14;
-  color: #aed9e0;
+  font-size: 18px;
+  color: #5e6472;
   font-weight: bold;
   font-style: oblique 40deg;
 }
