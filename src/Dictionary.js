@@ -6,6 +6,7 @@ import Results from "./Results";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  const logo = require("./dictionarylogo.png");
 
   function keywordChange(event) {
     setKeyword(event.target.value);
@@ -23,10 +24,13 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
+      <header>
+        <img src={logo} alt="logo" className="logo" />
+      </header>
       <form onSubmit={search}>
         <input
           type="search"
-          placeholder="Look up a word here..."
+          placeholder="Look up a word..."
           className="searchBar"
           onChange={keywordChange}
         />

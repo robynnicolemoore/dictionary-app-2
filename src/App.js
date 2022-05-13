@@ -10,6 +10,7 @@ function App() {
           <Dictionary />
         </main>
       </div>
+      <br />
       <footer>
         <a href="https://github.com/robynnicolemoore/dictionary-app-2">
           Open source code

@@ -1,19 +1,22 @@
 form {
   font-family: "Raleway", sans-serif;
+  max-width: 1000px;
 }
 
 .searchButton {
   border-radius: 10px;
-  margin-left: 10px;
   background-color: #d5d6e5;
   color: #3f2547;
   font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 .searchBar {
   background-color: 000000;
   font-weight: bold;
   margin-top: 20px;
+  width: 400px;
 }
 
 .searchButton:hover {
@@ -21,4 +24,10 @@ form {
   color: white;
   background-color: #3f2547;
   cursor: pointer;
+}
+
+.logo {
+  max-width: 200px;
+  display: block;
+  float: left;
 }
