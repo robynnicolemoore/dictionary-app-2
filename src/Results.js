@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning";
 import "./Results.css";
 import Phonetics from "./Phonetics";
+import Photos from "./Photos";
 
 export default function Results(props) {
   if (props.results) {
@@ -10,15 +11,22 @@ export default function Results(props) {
         <h1 className="word">{props.results.word}</h1>
         <section>
           <div className="phoneticsAudio">
-            {props.results.phonetics.map(function(phonetics, index) {
-              return (
-                <div key={index} className="Phonetics">
-                  <Phonetics phonetics={phonetics} />
-                </div>
-              );
-            })}
+            <div className="row">
+              <div className="col">
+                {props.results.phonetics.map(function(phonetics, index) {
+                  return (
+                    <div key={index} className="Phonetics">
+                      <Phonetics phonetics={phonetics} />
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="Phonetics">{props.results.phonetic}></div>
+              <div className="col">
+                <Photos photos={props.photos} />
+              </div>
+            </div>
           </div>
-          <div className="Phonetics">{props.results.phonetic}</div>
         </section>
 
         <section>
