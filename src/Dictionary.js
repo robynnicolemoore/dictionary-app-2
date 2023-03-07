@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { createClient } from "pexels";
 import "./Dictionary.css";
 import Results from "./Results";
 export default function Dictionary() {
@@ -7,6 +8,9 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
   const logo = require("./dictionarylogo.png");
+  const client = createClient(
+    "563492ad6f9170000100000159ec5ec4735845379bdf979842630b8e"
+  );
 
   function keywordChange(event) {
     setKeyword(event.target.value);
