@@ -25,9 +25,9 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
 
-    let pexelsApiKey = `563492ad6f9170000100000159ec5ec4735845379bdf979842630b8e`;
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    var pexelsApiKey = `563492ad6f9170000100000159ec5ec4735845379bdf979842630b8e`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}`;
+    let headers = { Authorization: pexelsApiKey };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
